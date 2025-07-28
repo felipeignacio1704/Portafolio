@@ -1,7 +1,8 @@
 // importaciones de otros elementos o secciones para la pagina principal
-import PantallaCarga from "./PantallaCarga"
+import PantallaCarga from "./Ui/PantallaCarga"
 import MenuCelular from "./Ui/MenuCelular"
 import Navbar from "./Ui/Navbar"
+import QuienSoy from "./sections/QuienSoy"
 import { useState } from "react"
 
 
@@ -16,6 +17,7 @@ function App() {
       {!isLoading && <PantallaCarga onComplete={() => setIsLoading(true)} />}
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <MenuCelular isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <QuienSoy />
     </>
   )
 

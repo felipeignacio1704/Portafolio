@@ -26,7 +26,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
           <div className="flex md:flex items-center space-x-8">
             <div className="hidden md:flex items-center space-x-8">
               {/* navegadores */}
-              <a href="#Resumen" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Quien Soy</a>
+              <a href="#QuienSoy" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Quien Soy</a>
               <a href="#MyStack" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Tecnologias</a>
               <a href="#Projects" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Proyectos</a>
               <a href="#Contact" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Contato</a>
