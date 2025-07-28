@@ -3,8 +3,9 @@ import PantallaCarga from "./Ui/PantallaCarga"
 import MenuCelular from "./Ui/MenuCelular"
 import Navbar from "./Ui/Navbar"
 import QuienSoy from "./sections/QuienSoy"
+import MyStack from './sections/MyStack'
+import Animaciones from "./Ui/animaciones"
 import { useState } from "react"
-
 
 // estructura principal de la pagina, donde se pondran los elementos de las demas secciones
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <MenuCelular isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <QuienSoy />
+      <Animaciones />
+      <MyStack />
     </>
   )
 
