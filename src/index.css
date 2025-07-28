@@ -1,8 +1,50 @@
 @import "tailwindcss";
+/* Importa TailwindCSS para poder usar sus utilidades, componentes y configuraciones base */
 
-html, body{
+html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #0D0707
+  background: #0D0707;
 }
+/* Estilos globales para eliminar márgenes y paddings por defecto, establecer una fuente base,
+   y un color de fondo oscuro para toda la página */
+
+/* ------------------------------------ */
+/* Definición de utilidades personalizadas en Tailwind */
+@layer utilities {
+  /* Crea una animación personalizada llamada 'loading' */
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(150%);
+    }
+  }
+
+  /* Clase que aplica la animación 'loading' */
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+/* Esta capa agrega una clase utilitaria para una barra de carga que se mueve de izquierda a derecha en bucle */
+
+/* ------------------------------------ */
+@layer utilities {
+  /* Define otra animación llamada 'blink' (parpadeo) */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Clase que aplica la animación 'blink' */
+  .animate-blink {
+    animation: blink 3.8s step-end infinite;
+  }
+}
+/* Esta segunda capa agrega una clase para hacer que un elemento parpadee (cambie su opacidad) de forma infinita */
