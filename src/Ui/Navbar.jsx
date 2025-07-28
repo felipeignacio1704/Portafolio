@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 import Logo from './Logo'
 import { MdMenu } from "react-icons/md";
+import { Link } from 'react-scroll';
+
 
 
 // isMenuOpen: Booleano que indica si el menú está abierto.
@@ -26,10 +28,44 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
           <div className="flex md:flex items-center space-x-8">
             <div className="hidden md:flex items-center space-x-8">
               {/* navegadores */}
-              <a href="#QuienSoy" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Quien Soy</a>
-              <a href="#MyStack" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Tecnologias</a>
-              <a href="#Projects" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Proyectos</a>
-              <a href="#Contact" className='text-gray-50 hover:text-xl hover:text-white transition-all'>Contato</a>
+              {/* {se opto por una libreria especializada en navigacion, con el fin de hacer un desplazamiento mas suave y agradable} */}
+              <Link
+                to="QuienSoy"
+                smooth={true}
+                offset={-80}  // compensa el alto del navbar
+                duration={500} // duración del scroll (ms)
+                className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
+              >
+                Quién soy
+              </Link>
+
+              <Link
+                to="MyStack"
+                smooth={true}
+                offset={-80}  // compensa el alto del navbar
+                duration={500} // duración del scroll (ms)
+                className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
+              >
+                Tecnologias
+              </Link>
+              <Link
+                to="#"
+                smooth={true}
+                offset={-80}  // compensa el alto del navbar
+                duration={500} // duración del scroll (ms)
+                className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
+              >
+                Projectos
+              </Link>
+              <Link
+                to="#"
+                smooth={true}
+                offset={-80}  // compensa el alto del navbar
+                duration={500} // duración del scroll (ms)
+                className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
+              >
+                Contacto
+              </Link>
             </div>
           </div>
         </div>
