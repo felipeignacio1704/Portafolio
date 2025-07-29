@@ -5,7 +5,7 @@ import cv from "../assets/Cv.pdf"
 
 export default function QuienSoy() {
   return (
-    // Sección principal con ID para navegación. Usa flexbox para distribuir contenido vertical u horizontalmente.
+    // Sección principal con name para navegación. Usa flexbox para distribuir contenido vertical u horizontalmente.
     <section name="QuienSoy" className='min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15'>
       <div className='text-center z-10 px-4'>
         <img className='h-[380px] w-[300px] border-0 mt-20 rounded-full shadow-lg shadow-gray-500/70 lg:m-0 lg:max-w-[250px] object-cover object-bottom hover:translate-y-1 transition-all' src={Foto} alt="Felipe Naranjo"

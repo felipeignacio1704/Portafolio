@@ -49,7 +49,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
                 Tecnologias
               </Link>
               <Link
-                to="#"
+                to="Projects"
                 smooth={true}
                 offset={-80}  // compensa el alto del navbar
                 duration={500} // duración del scroll (ms)

@@ -4,6 +4,7 @@ import MenuCelular from "./Ui/MenuCelular"
 import Navbar from "./Ui/Navbar"
 import QuienSoy from "./sections/QuienSoy"
 import MyStack from './sections/MyStack'
+import Projects from './sections/Projects'
 import Animaciones from "./Ui/animaciones"
 import { useState } from "react"
 
@@ -21,6 +22,7 @@ function App() {
       <QuienSoy />
       <Animaciones />
       <MyStack />
+      <Projects />
     </>
   )
 
