@@ -58,7 +58,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
                 Projectos
               </Link>
               <Link
-                to="#"
+                to="Contact"
                 smooth={true}
                 offset={-80}  // compensa el alto del navbar
                 duration={500} // duración del scroll (ms)
