@@ -4,10 +4,12 @@ import MenuCelular from "./Ui/MenuCelular"
 import Navbar from "./Ui/Navbar"
 import QuienSoy from "./sections/QuienSoy"
 import MyStack from './sections/MyStack'
+import Footer from './sections/Footer'
 import Projects from './sections/Projects'
 import { Contact } from './sections/Contact'
 import Animaciones from "./Ui/animaciones"
 import { useState } from "react"
+import RevealOnScreoll from './Ui/RevealOnScroll'
 
 // estructura principal de la pagina, donde se pondran los elementos de las demas secciones
 function App() {
@@ -20,11 +22,14 @@ function App() {
       {!isLoading && <PantallaCarga onComplete={() => setIsLoading(true)} />}
       <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <MenuCelular isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <QuienSoy />
-      <Animaciones />
+      <RevealOnScreoll>
+        <QuienSoy />
+        <Animaciones />
+      </RevealOnScreoll >
       <MyStack />
       <Projects />
       <Contact />
+      <Footer />
     </>
   )
 

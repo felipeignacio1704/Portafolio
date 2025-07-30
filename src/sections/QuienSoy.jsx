@@ -3,6 +3,7 @@ import Foto from '../assets/Foto.jpeg'
 import { FiDownload } from "react-icons/fi";
 import cv from "../assets/Cv.pdf"
 
+
 export default function QuienSoy() {
   return (
     // Sección principal con name para navegación. Usa flexbox para distribuir contenido vertical u horizontalmente.
@@ -30,6 +31,6 @@ export default function QuienSoy() {
           </a>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
