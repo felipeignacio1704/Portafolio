@@ -18,9 +18,9 @@ export default function QuienSoy() {
           Ingeniero en informática con experiencia en análisis de datos, desarrollo de software y gestión de proyectos. Me enfoco en la mejora continua, aplicando metodologías modernas para optimizar procesos y liderar soluciones eficientes en entornos colaborativos.
         </p>
         <div className='flex justify-center items-center space-x-4'>
-          <a className='bg-gradient-to-r flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden text-white' href="#Contact">
+          {/* <a className='bg-gradient-to-r flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden text-white' href="#Contact">
             Hablemos
-          </a>
+          </a> */}
           {/* Botón de descarga del CV con ícono */}
           <a className='bg-gradient-to-r flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] font-medium transition relative overflow-hidden text-white' href={cv}
             download>

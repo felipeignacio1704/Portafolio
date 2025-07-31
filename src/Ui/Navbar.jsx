@@ -46,7 +46,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
                 duration={500} // duración del scroll (ms)
                 className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
               >
-                Tecnologias
+                Tecnologías
               </Link>
               <Link
                 to="Projects"
