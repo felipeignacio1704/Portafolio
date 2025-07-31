@@ -13,7 +13,7 @@ export default function MyStack() {
                 {/* titulo */}
                 <div className='max-w-3xl mx-auto px-4'>
                     <h2 className='max-w-3xl text-4xl font-semibold mb-12 bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent text-center'>
-                        Hola mundo
+                        Formación y experiencia
                     </h2>
                     {/* parrafo descriptivo sobre mis habilidades/talentos */}
                     {/* <div className='p-8 mb-6 rounded-xl border-white/10 border-2 hover:-translate-y-1 transition-all'>
