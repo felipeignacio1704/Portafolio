@@ -87,17 +87,3 @@ npm run deploy
 
 Revisar que los cambios se vean en:
 https://felipeignacio1704.github.io/Portafolio/
-
-### 📂 Estructura del Proyecto
-Portafolio/
-│
-├─ src/
-│   ├─ assets/          # Imágenes y recursos
-│   ├─ components/      # Componentes React
-│   ├─ Ui/              # Componentes de utilidad como RevealOnScroll
-│   ├─ App.jsx          # Componente principal
-│   └─ main.jsx         # Entrada de la app
-│
-├─ public/              # Archivos estáticos
-├─ package.json         # Configuración de dependencias y scripts
-└─ vite.config.ts       # Configuración de Vite
