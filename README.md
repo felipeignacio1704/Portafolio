@@ -1,47 +1,71 @@
-Flujo de Mantenimiento Detallado
+# 🖥️ Portafolio de Felipe Naranjo
 
-Cada vez que quieras actualizar tu portafolio:
+Este repositorio contiene mi portafolio personal desarrollado con **React**, **Vite**, **TailwindCSS** y desplegado en **GitHub Pages**.
 
-1. Hacer cambios en el código
+---
 
-Edita los archivos dentro de src/ (por ejemplo: nuevos proyectos, textos, imágenes, estilos, componentes).
+## 🚀 Descripción
 
-2. Probar localmente
+Aplicación web enfocada en mostrar mi experiencia profesional, habilidades y proyectos. También incluye un formulario de contacto funcional.
 
+---
+
+## 🛠 Tecnologías utilizadas
+
+- **React** – Para construir la interfaz de usuario.
+- **Vite** – Herramienta de bundling y desarrollo.
+- **TailwindCSS** – Estilos y diseño responsivo.
+- **React Icons** – Íconos en la aplicación.
+- **gh-pages** – Para desplegar el proyecto en GitHub Pages.
+
+---
+
+## 🔧 Flujo de Mantenimiento Detallado
+
+Cada vez que quieras actualizar tu portafolio, sigue estos pasos:
+
+### 1️⃣ Hacer cambios en el código
+Edita los archivos dentro de `src/` (por ejemplo: nuevos proyectos, textos, imágenes, estilos, componentes).
+
+---
+
+### 2️⃣ Probar localmente
 Ejecuta tu proyecto en modo desarrollo:
 npm run dev
 
-3. Construir la versión de producción
+### 3️⃣ Construir la versión de producción
 
 Una vez validados los cambios, compila el proyecto:
-
 npm run build
 
-4. Desplegar a GitHub Pages
-
+### 4️⃣ Construir la versión de producción
 Sube la versión compilada a la rama gh-pages usando el script de despliegue:
 
 npm run deploy
 
-Nota: Asegúrate de que en package.json tengas configurado:
+💡 Nota: Asegúrate de que en package.json tengas configurado:
 
 "scripts": {
   "build": "vite build",
   "deploy": "gh-pages -d dist"
 }
 
-5. Verificar la actualización
+### 5️⃣ Verificar la actualización
 
-Espera unos minutos y abre la URL del portafolio:
+Espera unos minutos y abre la URL de tu portafolio:
 
 https://felipeignacio1704.github.io/Portafolio/
 
-
 Verifica que los cambios se reflejen correctamente.
 
-Buenas Prácticas
+### 🛡 Buenas Prácticas
 
-Antes de cada despliegue, siempre correr npm run build para evitar subir versiones de desarrollo.
+Antes de cada despliegue, siempre correr:
+
+npm run build
+
+
+para evitar subir versiones de desarrollo.
 
 Hacer commits frecuentes en Git para mantener un historial claro de los cambios.
 
@@ -49,14 +73,31 @@ Verificar que todas las imágenes y recursos tengan las rutas correctas antes de
 
 Evitar modificar archivos directamente en la rama gh-pages; siempre construir desde src/ y subir con npm run deploy.
 
-Guía Rápida de Mantenimiento
+### ⚡ Guía Rápida de Mantenimiento
 
 Editar código en src/.
+Probar localmente con:
+npm run dev
 
-Probar localmente con npm run dev.
+Construir producción:
+npm run build
 
-Construir producción: npm run build.
+Desplegar:
+npm run deploy
 
-Desplegar: npm run deploy.
+Revisar que los cambios se vean en:
+https://felipeignacio1704.github.io/Portafolio/
 
-Revisar que los cambios se vean en https://felipeignacio1704.github.io/Portafolio/.
+### 📂 Estructura del Proyecto
+Portafolio/
+│
+├─ src/
+│   ├─ assets/          # Imágenes y recursos
+│   ├─ components/      # Componentes React
+│   ├─ Ui/              # Componentes de utilidad como RevealOnScroll
+│   ├─ App.jsx          # Componente principal
+│   └─ main.jsx         # Entrada de la app
+│
+├─ public/              # Archivos estáticos
+├─ package.json         # Configuración de dependencias y scripts
+└─ vite.config.ts       # Configuración de Vite
