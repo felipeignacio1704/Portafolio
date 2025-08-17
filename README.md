@@ -1,12 +1,62 @@
-# React + Vite
+Flujo de Mantenimiento Detallado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cada vez que quieras actualizar tu portafolio:
 
-Currently, two official plugins are available:
+1. Hacer cambios en el código
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Edita los archivos dentro de src/ (por ejemplo: nuevos proyectos, textos, imágenes, estilos, componentes).
 
-## Expanding the ESLint configuration
+2. Probar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ejecuta tu proyecto en modo desarrollo:
+npm run dev
+
+3. Construir la versión de producción
+
+Una vez validados los cambios, compila el proyecto:
+
+npm run build
+
+4. Desplegar a GitHub Pages
+
+Sube la versión compilada a la rama gh-pages usando el script de despliegue:
+
+npm run deploy
+
+Nota: Asegúrate de que en package.json tengas configurado:
+
+"scripts": {
+  "build": "vite build",
+  "deploy": "gh-pages -d dist"
+}
+
+5. Verificar la actualización
+
+Espera unos minutos y abre la URL del portafolio:
+
+https://felipeignacio1704.github.io/Portafolio/
+
+
+Verifica que los cambios se reflejen correctamente.
+
+Buenas Prácticas
+
+Antes de cada despliegue, siempre correr npm run build para evitar subir versiones de desarrollo.
+
+Hacer commits frecuentes en Git para mantener un historial claro de los cambios.
+
+Verificar que todas las imágenes y recursos tengan las rutas correctas antes del deploy.
+
+Evitar modificar archivos directamente en la rama gh-pages; siempre construir desde src/ y subir con npm run deploy.
+
+Guía Rápida de Mantenimiento
+
+Editar código en src/.
+
+Probar localmente con npm run dev.
+
+Construir producción: npm run build.
+
+Desplegar: npm run deploy.
+
+Revisar que los cambios se vean en https://felipeignacio1704.github.io/Portafolio/.
