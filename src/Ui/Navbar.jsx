@@ -17,12 +17,12 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
     // propiedades del navbar
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg px-1 border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center font-mono h-16">
+        <div className="flex justify-between items-center font-serif h-16">
           <Logo />
           {/* Se muestra solo si isMenuOpen es false.
           Al hacer clic, invierte el valor de isMenuOpen usando la función setIsMenuOpen.
           md:hidden: Este botón se oculta en pantallas medianas o más grandes (solo visible en celular). */}
-          {!isMenuOpen && <div onClick={() => setIsMenuOpen((prev) => !prev)} className="text-2x1 absolute right-7 z-40 md:hidden cursor-pointer font-mono text-white">
+          {!isMenuOpen && <div onClick={() => setIsMenuOpen((prev) => !prev)} className="text-2x1 absolute right-7 z-40 md:hidden cursor-pointer font-serif text-white">
             <MdMenu />
           </div>}
           <div className="flex md:flex items-center space-x-8">
@@ -55,7 +55,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
                 duration={500} // duración del scroll (ms)
                 className='text-gray-50 hover:text-xl hover:text-white transition-all cursor-pointer'
               >
-                Projectos
+                Proyectos
               </Link>
               <Link
                 to="Contact"

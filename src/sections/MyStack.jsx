@@ -8,7 +8,7 @@ export default function MyStack() {
         "React", "Flutter", "Dart"
     ]
     return (
-        <section name="MyStack" className='min-h-screen font-mono flex items-center justify-center py-20'>
+        <section name="MyStack" className='min-h-screen font-serif flex items-center justify-center py-20'>
             <RevealOnScreoll>
                 {/* titulo */}
                 <div className='max-w-3xl mx-auto px-4'>
@@ -22,20 +22,20 @@ export default function MyStack() {
                             Escribir informacion sobre mi {" "}
                         </p>
                     </div> */}
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                    <div className='grid grid-cols-1 md:grid-cols-5 gap-6'>
                         {/* lista de habilidades */}
-                        <div className='rounded-xl p-6 hover:-translate-y-1 transition-all '>
-                            <h3 className='text-2xl text-center font-bold mb-8 text-gray-300'>💻 Habilidades </h3>
-                            <div className='flex justify-center flex-wrap gap-2'>
+                        <div className='md:col-span-2 rounded-xl p-6 hover:-translate-y-1 transition-all  '>
+                            <h3 className='text-2xl text-left font-bold mb-8 text-gray-300'>💻 Habilidades </h3>
+                            <div className='flex text-left flex-wrap gap-2'>
                                 {skills.map((skill, index) =>
                                     <span className='bg-blue-500/10 text-blue-400 py-1 px-3 rounded-full text-balance hover:bg-blue-500/20 hover:shadow-[9_2px_8px_rgba(59,130,246,0.2)] transition' key={index}>{skill}
                                     </span>)}
                             </div>
                         </div>
                         {/* historial de educacion */}
-                        <div className='p-6 hover:-translate-y-1 transition-all'>
-                            <h3 className='text-2xl text-center font-bold mb-8 text-gray-300'>
-                                📚Educacion
+                        <div className='md:col-span-3 p-6 hover:-translate-y-1 transition-all'>
+                            <h3 className='text-2xl text-left font-bold mb-8 text-gray-300'>
+                                📚Educación
                             </h3>
                             <ul className='pl-5 list-disc list-inside text-lh text-gray-300'>
                                 <li>

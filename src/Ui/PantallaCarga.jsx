@@ -29,7 +29,7 @@ export default function PantallaCarga({ onComplete }) {
                 </div>
             </div>
             {/* Texto a mostrar */}
-            <div className='mb-4 text-3xl font-mono font-semibold'>
+            <div className='mb-4 text-3xl font-serif font-semibold'>
                 {text}
                 <span className='animate-blink ml-1 text-2x1 font-bold'>|</span>
             </div>

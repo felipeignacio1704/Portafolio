@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 function Footer() {
     return (
         <footer>
-            <div className="min-h-[100px] flex flex-col justify-center gap-6 text-center text-lg text-gray-300 font-mono mb-10">
+            <div className="min-h-[100px] flex flex-col justify-center gap-6 text-center text-lg text-gray-300 font-serif mb-10">
                 <div className="flex gap-10 p-4 justify-center text-white">
                     <a href="https://github.com/FelipeNaranjoL" className="border p-2 text-2xl rounded hover:-translate-y-2 transition-all bg-black text-white" target="_blank">
                         <FaGithub />

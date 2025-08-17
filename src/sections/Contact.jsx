@@ -3,7 +3,7 @@ import RevealOnScreoll from '../Ui/RevealOnScroll'
 export const Contact = () => {
     return (
         // seccion de formulario de contacto
-        <section name="Contact" className="min-h-screen font-mono flex items-center justify-center py-20">
+        <section name="Contact" className="min-h-screen font-serif flex items-center justify-center py-20">
             <RevealOnScreoll>
                 {/* titulo */}
                 <div className="px-4 w-100">
